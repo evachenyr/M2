@@ -1,11 +1,11 @@
 package edu.gatech.oad.antlab.person;
 
 /**
- *  A simple class for person 5
+ *  A simple class for Samuel Thomas
  *  returns their name and a
- *  modified string 
- *  
- *  @author Bob
+ *  modified string
+ *
+ *  @author Samuel Thomas
  *  @version 1.1
  */
 public class Person5 {
@@ -31,19 +31,27 @@ public class Person5 {
 	 */
 	private String calc(String input) {
 	  //Person 5 put your implementation here
-	  return null;
+		String str1 = input.substring(0,2);
+		String str2 = input.substring(2);
+		return str2 + str1;
+
 	}
-	
+
 	/**
 	 * Return a string rep of this object
 	 * that varies with an input string
 	 *
 	 * @param input the varying string
-	 * @return the string representing the 
+	 * @return the string representing the
 	 *         object
 	 */
 	public String toString(String input) {
-	  return name + calc(input);
+		return name + calc(input);
 	}
+
+	public static void main(String[] args) {
+        Person5 person5 = new Person5("Samuel Thomas");
+        System.out.println(person5);
+    }
 
 }
